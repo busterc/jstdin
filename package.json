@@ -1,6 +1,6 @@
 {
   "name": "jstdin",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description":
     "a better `node -p` that accepts stdin and can format and highlight output",
   "homepage": "https://github.com/busterc/jstdin",
