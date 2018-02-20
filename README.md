@@ -2,7 +2,7 @@
 
 > a better `node -p` that accepts stdin and can format and highlight output
 
-🔑 You can use [`npx`](http://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner) to include packages to be required by `jdstin`
+🔑 You can use [`npx`](http://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner) to include packages to be required by `jstdin`
 
 ## Installation
 
