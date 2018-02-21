@@ -2,8 +2,6 @@
 
 > a better `node -p` that accepts stdin and can format and highlight output
 
-🔑 You can use [`npx`](http://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner) to include packages to be required by `jstdin`
-
 ## Installation
 
 ```sh
@@ -42,14 +40,6 @@ $ jstdin --help
       2,
       4,
       6
-    ]
-
-    # 🔑 use npx to include other packages
-    $ echo '[1,2,3,2,1]' | npx -p lodash jstdin 'x => require("lodash").uniq(x)'
-    [
-      1,
-      2,
-      3
     ]
 
     # use stdin, process and do not pretty print
