@@ -27,18 +27,18 @@
   ],
   "devDependencies": {
     "coveralls": "^3.0.0",
-    "eslint": "^4.1.0",
+    "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.4.0",
     "eslint-config-xo": "^0.20.1",
     "eslint-plugin-prettier": "^2.2.0",
-    "execa": "^0.9.0",
+    "execa": "^0.10.0",
     "husky": "^0.14.3",
-    "jest": "^22.4.0",
-    "jest-cli": "^22.4.0",
+    "jest": "^22.4.3",
+    "jest-cli": "^22.4.3",
     "lec": "^1.0.1",
-    "lint-staged": "^6.1.1",
+    "lint-staged": "^7.0.4",
     "nsp": "^3.2.1",
-    "prettier": "^1.7.0"
+    "prettier": "^1.12.0"
   },
   "scripts": {
     "prepublish": "lec lib/cli.js -c LF && nsp check",
@@ -75,7 +75,8 @@
   "bin": "lib/cli.js",
   "dependencies": {
     "cardinal": "^1.0.0",
-    "get-stdin": "^5.0.1",
+    "get-stdin": "^6.0.0",
     "meow": "^4.0.0"
-  }
+  },
+  "reveal": true
 }
