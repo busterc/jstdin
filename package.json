@@ -1,15 +1,16 @@
 {
   "name": "jstdin",
   "version": "0.10.0",
-  "description":
-    "a better `node -p` that accepts stdin and can format and highlight output",
+  "description": "a better `node -p` that accepts stdin and can format and highlight output",
   "homepage": "https://github.com/busterc/jstdin",
   "author": {
     "name": "Buster Collings",
     "email": "busterc@gmail.com",
     "url": "https://about.me/buster"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "main": "lib/index.js",
   "keywords": [
     "cli",
@@ -26,19 +27,19 @@
     "npx"
   ],
   "devDependencies": {
-    "coveralls": "^3.0.0",
-    "eslint": "^4.19.1",
+    "coveralls": "^3.0.2",
+    "eslint": "^5.0.1",
     "eslint-config-prettier": "^2.4.0",
-    "eslint-config-xo": "^0.20.1",
-    "eslint-plugin-prettier": "^2.2.0",
+    "eslint-config-xo": "^0.23.0",
+    "eslint-plugin-prettier": "^2.6.1",
     "execa": "^0.10.0",
     "husky": "^0.14.3",
-    "jest": "^22.4.3",
-    "jest-cli": "^22.4.3",
+    "jest": "^23.2.0",
+    "jest-cli": "^23.2.0",
     "lec": "^1.0.1",
-    "lint-staged": "^7.0.4",
+    "lint-staged": "^7.2.0",
     "nsp": "^3.2.1",
-    "prettier": "^1.12.0"
+    "prettier": "^1.13.7"
   },
   "scripts": {
     "prepublish": "lec lib/cli.js -c LF && nsp check",
@@ -47,11 +48,20 @@
     "test": "jest --coverage"
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"],
-    "*.json": ["prettier --write", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "eslintConfig": {
-    "extends": ["xo", "prettier"],
+    "extends": [
+      "xo",
+      "prettier"
+    ],
     "env": {
       "jest": true,
       "node": true
@@ -65,7 +75,9 @@
         }
       ]
     },
-    "plugins": ["prettier"]
+    "plugins": [
+      "prettier"
+    ]
   },
   "repository": "busterc/jstdin",
   "jest": {
@@ -74,9 +86,9 @@
   "license": "ISC",
   "bin": "lib/cli.js",
   "dependencies": {
-    "cardinal": "^1.0.0",
+    "cardinal": "^2.1.1",
     "get-stdin": "^6.0.0",
-    "meow": "^4.0.0"
+    "meow": "^5.0.0"
   },
   "reveal": true
 }
