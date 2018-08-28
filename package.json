@@ -1,62 +1,57 @@
 {
   "name": "jstdin",
-  "version": "0.10.1",
   "description": "a better `node -p` that accepts stdin and can format and highlight output",
+  "license": "ISC",
+  "author": "Buster Collings <busterc@gmail.com> (https://about.me/buster)",
   "homepage": "https://github.com/busterc/jstdin",
-  "author": {
-    "name": "Buster Collings",
-    "email": "busterc@gmail.com",
-    "url": "https://about.me/buster"
-  },
+  "repository": "busterc/jstdin",
+  "version": "0.10.1",
+  "main": "lib/index.js",
+  "bin": "lib/cli.js",
   "files": [
     "lib"
   ],
-  "main": "lib/index.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "prepublish": "lec lib/cli.js -c LF && nsp check",
+    "test": "jest --coverage"
+  },
+  "dependencies": {
+    "cardinal": "^2.1.1",
+    "get-stdin": "^6.0.0",
+    "meow": "^5.0.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "eslint": "^5.4.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-xo": "^0.24.2",
+    "eslint-plugin-json": "^1.2.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "execa": "^1.0.0",
+    "husky": "^0.14.3",
+    "jest": "^23.5.0",
+    "jest-cli": "^23.5.0",
+    "lec": "^1.0.1",
+    "lint-staged": "^7.2.2",
+    "nsp": "^3.2.1",
+    "prettier": "^1.14.2",
+    "prettier-package-json": "^2.0.0"
+  },
   "keywords": [
     "cli",
     "eval",
-    "stdin",
-    "node-p",
-    "js",
-    "json",
-    "parse",
-    "pretty-print",
+    "fx",
     "jq",
     "jq.node",
-    "fx",
-    "npx"
+    "js",
+    "json",
+    "node-p",
+    "npx",
+    "parse",
+    "pretty-print",
+    "stdin"
   ],
-  "devDependencies": {
-    "coveralls": "^3.0.2",
-    "eslint": "^5.0.1",
-    "eslint-config-prettier": "^2.4.0",
-    "eslint-config-xo": "^0.23.0",
-    "eslint-plugin-prettier": "^2.6.1",
-    "execa": "^0.10.0",
-    "husky": "^0.14.3",
-    "jest": "^23.2.0",
-    "jest-cli": "^23.2.0",
-    "lec": "^1.0.1",
-    "lint-staged": "^7.2.0",
-    "nsp": "^3.2.1",
-    "prettier": "^1.13.7"
-  },
-  "scripts": {
-    "prepublish": "lec lib/cli.js -c LF && nsp check",
-    "pretest": "eslint .",
-    "precommit": "lint-staged",
-    "test": "jest --coverage"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "eslintConfig": {
     "extends": [
       "xo",
@@ -76,19 +71,26 @@
       ]
     },
     "plugins": [
-      "prettier"
+      "prettier",
+      "json"
     ]
   },
-  "repository": "busterc/jstdin",
   "jest": {
     "testEnvironment": "node"
   },
-  "license": "ISC",
-  "bin": "lib/cli.js",
-  "dependencies": {
-    "cardinal": "^2.1.1",
-    "get-stdin": "^6.0.0",
-    "meow": "^5.0.0"
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ],
+    "package.json": [
+      "prettier-package-json --write",
+      "git add"
+    ]
   },
   "reveal": true
 }
