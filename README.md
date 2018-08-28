@@ -1,5 +1,7 @@
 # jstdin [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/busterc/jstdin.svg)](https://greenkeeper.io/)
+
 > a better `node -p` that accepts stdin and can format and highlight output
 
 ## Installation
