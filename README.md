@@ -44,7 +44,7 @@ $ jstdin --help
 
     # use stdin, process and do not pretty print
     $ echo '[1,2,3]' | jstdin 'x => x.map(x => x*2)' --raw
-    [ 2, 4, 6 ]
+    [2,4,6]
 
     # use stdin and just pretty print
     $ echo '[{"n":1,"a":{"b":"c"}},{"n":2,"a":{"d":{"e":"f"}}}]' | jstdin'
@@ -66,10 +66,10 @@ $ jstdin --help
 
 ## Inspiration:
 
-* [`js`](https://www.npmjs.com/package/js)
-* [`jq`](https://www.npmjs.com/package/node-jq)
-* [`jq.node`](https://www.npmjs.com/package/jq.node)
-* [`fx`](https://www.npmjs.com/package/fx)
+- [`js`](https://www.npmjs.com/package/js)
+- [`jq`](https://www.npmjs.com/package/node-jq)
+- [`jq.node`](https://www.npmjs.com/package/jq.node)
+- [`fx`](https://www.npmjs.com/package/fx)
 
 ## License
 
