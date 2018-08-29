@@ -2,6 +2,10 @@
 
 > a better `node -p` that accepts stdin and can format and highlight output
 
+### FYI
+
+`jstdin` works really well in conjunction with [`lbl`](https://github.com/busterc/lbl) (a line-by-line stdin parser, sort of like AWK, but 100% JS)
+
 ## Installation
 
 ```sh
