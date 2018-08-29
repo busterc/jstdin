@@ -1,4 +1,4 @@
-# jstdin [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# jstdin [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 
 > a better `node -p` that accepts stdin and can format and highlight output
 
@@ -83,3 +83,5 @@ ISC © [Buster Collings](https://about.me/buster)
 [daviddm-url]: https://david-dm.org/busterc/jstdin
 [coveralls-image]: https://coveralls.io/repos/busterc/jstdin/badge.svg
 [coveralls-url]: https://coveralls.io/r/busterc/jstdin
+[greenkeeper-image]: https://badges.greenkeeper.io/busterc/jstdin.svg
+[greenkeeper-url]: https://greenkeeper.io/
